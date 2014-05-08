@@ -7,6 +7,8 @@ ElasticTest::Application.routes.draw do
   root 'search#index'
 
   post '/search' => 'search#index'
+  get '/search' => 'search#index'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
