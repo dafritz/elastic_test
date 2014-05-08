@@ -45,6 +45,10 @@ ElasticTest::Application.configure do
   # Set to :debug to see everything in the log.
   config.log_level = :info
 
+  config.cache_classes = true
+  config.serve_static_assets = true
+  config.assets.compile = true
+  config.assets.digest = true
   # Prepend all log lines with the following tags.
   # config.log_tags = [ :subdomain, :uuid ]
 
