@@ -1,7 +1,9 @@
 <%= form_tag ('/search') do %>
-	<%= text_field_tag :search_field%>
+	<%= text_field_tag :search_field, params[:search_field]%>
 	<%= submit_tag :search%>
 <%end%>
+<%=link_to "Clear Search", "/search"%>
+<br/>
 
 <br/>
 
