@@ -11,7 +11,7 @@ gem 'rails', '4.0.0'
 gem 'sqlite3', group: :development
 gem 'pg', group: :production
 
-
+gem 'foreman'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -49,3 +49,9 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+gem "rspec-rails", :group => [:test, :development]
+group :test do
+  gem "factory_girl_rails"
+  gem "capybara"
+  gem 'database_cleaner'
+end

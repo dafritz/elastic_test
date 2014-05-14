@@ -2,6 +2,7 @@
 	<%= text_field_tag :search_field, params[:search_field]%>
 	<%= submit_tag :search%>
 <%end%>
+<%= "#{@results.count} Result#{@results.count != 1 ? 's' : ''}"%><br/>
 <%=link_to "Clear Search", "/search"%>
 <br/>
 
